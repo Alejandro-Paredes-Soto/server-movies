@@ -1,0 +1,44 @@
+﻿{
+  "$schema": "http://json.schemastore.org/launchsettings.json",
+  "iisSettings": {
+    "windowsAuthentication": false,
+    "anonymousAuthentication": true,
+    "iisExpress": {
+      "applicationUrl": "http://localhost:5639",
+      "sslPort": 44340
+    }
+  },
+  "profiles": {
+    "http": {
+      "commandName": "Project",
+      "dotnetRunMessages": true,
+      "launchBrowser": true,
+      "launchUrl": "swagger",
+      "applicationUrl": "http://localhost:5079",
+      "environmentVariables": {
+        "ASPNETCORE_ENVIRONMENT": "Development",
+        "ASPNETCORE_APIKEY_APIPUBLICA": "eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiIwYzFmYjc5MjAxOGRiYmI5ZmUxNThhMThlODkxNTBlYSIsIm5iZiI6MTcyNjQ1OTExMy4wNjE2MjgsInN1YiI6IjY0NDAwNGQyN2U0MDNkMDUzNDI1YTZiMCIsInNjb3BlcyI6WyJhcGlfcmVhZCJdLCJ2ZXJzaW9uIjoxfQ.nvbsoFe8giNhJ_H0EfHsDYg5TiYoXuRI18y897r5DV4"
+      }
+    },
+    "https": {
+      "commandName": "Project",
+      "dotnetRunMessages": true,
+      "launchBrowser": true,
+      "launchUrl": "swagger",
+      "applicationUrl": "https://localhost:7109;http://localhost:5079",
+      "environmentVariables": {
+        "ASPNETCORE_ENVIRONMENT": "Development",
+        "ASPNETCORE_APIKEY_APIPUBLICA": "eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiIwYzFmYjc5MjAxOGRiYmI5ZmUxNThhMThlODkxNTBlYSIsIm5iZiI6MTcyNjQ1OTExMy4wNjE2MjgsInN1YiI6IjY0NDAwNGQyN2U0MDNkMDUzNDI1YTZiMCIsInNjb3BlcyI6WyJhcGlfcmVhZCJdLCJ2ZXJzaW9uIjoxfQ.nvbsoFe8giNhJ_H0EfHsDYg5TiYoXuRI18y897r5DV4"
+      }
+    },
+    "IIS Express": {
+      "commandName": "IISExpress",
+      "launchBrowser": true,
+      "launchUrl": "swagger",
+      "environmentVariables": {
+        "ASPNETCORE_ENVIRONMENT": "Production",
+        "ASPNETCORE_APIKEY_APIPUBLICA": "eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiIwYzFmYjc5MjAxOGRiYmI5ZmUxNThhMThlODkxNTBlYSIsIm5iZiI6MTcyNjQ1OTExMy4wNjE2MjgsInN1YiI6IjY0NDAwNGQyN2U0MDNkMDUzNDI1YTZiMCIsInNjb3BlcyI6WyJhcGlfcmVhZCJdLCJ2ZXJzaW9uIjoxfQ.nvbsoFe8giNhJ_H0EfHsDYg5TiYoXuRI18y897r5DV4"
+      }
+    }
+  }
+}

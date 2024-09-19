@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "0cqg0g7x0CNFTvH8LWN6PkwtqOxlNMgzCuJdp7rgyUg=",
+  "Source": "server_movies",
+  "BasePath": "_content/server_movies",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}
