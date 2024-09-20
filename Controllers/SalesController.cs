@@ -48,7 +48,12 @@ namespace server_movies.Controllers
 
 
             Sales existingSale = await _connectionDb.Sales
-         .FirstOrDefaultAsync(s => s.IdMovie == sales.IdMovie);
+        .FirstOrDefaultAsync(s => s.IdUser == sales.IdUser && s.IdMovie == sales.IdMovie);
+
+            if (existingSale != null)
+            {
+                return BadRequest($"Ya has comprado la película " + existingSale.title);
+            }
 
             if (existingSale != null)
             {
