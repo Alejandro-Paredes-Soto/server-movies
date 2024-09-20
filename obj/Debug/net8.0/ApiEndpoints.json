@@ -42,16 +42,16 @@
     "ReturnTypes": []
   },
   {
-    "ContainingType": "server_movies.Controllers.ShoppingCarController",
-    "Method": "AddMovieCar",
-    "RelativePath": "api/v1/ShoppingCar/addMovieCar",
-    "HttpMethod": "POST",
+    "ContainingType": "server_movies.Controllers.SalesController",
+    "Method": "GetSales",
+    "RelativePath": "api/v1/Sales/{idUser}",
+    "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,
     "Parameters": [
       {
-        "Name": "shoppingCar",
-        "Type": "server_movies.Models.ShoppingCar",
+        "Name": "idUser",
+        "Type": "System.Int32",
         "IsRequired": true
       }
     ],

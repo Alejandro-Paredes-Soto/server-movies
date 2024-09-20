@@ -1,5 +1,6 @@
 ﻿using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
 using server_movies.Models;
 
 namespace server_movies.Controllers
@@ -16,6 +17,24 @@ namespace server_movies.Controllers
             _connectionDb = connectionDb;
         }
 
+        [HttpGet("{idUser}")]
+        [Authorize]
+        [Produces("application/json")]
+
+        public async Task<IActionResult> GetSales(int idUser)
+        {
+            List<Sales> salesList = await _connectionDb.Sales
+        .Where(s => s.IdUser == idUser)
+        .ToListAsync();
+
+            if (salesList == null)
+            {
+                return BadRequest("No tienes historial disponible");
+            }
+
+            return Ok(salesList);
+        }
+
 
         [HttpPost]
         [Authorize]
@@ -27,8 +46,18 @@ namespace server_movies.Controllers
                 return BadRequest("Los campos son obligatorios");
             }
 
+
+            Sales existingSale = await _connectionDb.Sales
+         .FirstOrDefaultAsync(s => s.IdMovie == sales.IdMovie);
+
+            if (existingSale != null)
+            {
+                return BadRequest("Ya compraste esta pelicula ");
+            }
+
             await _connectionDb.Sales.AddAsync(sales);
             await _connectionDb.SaveChangesAsync();
+
             return Ok(sales);
         }
         

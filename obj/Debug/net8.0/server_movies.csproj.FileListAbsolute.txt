@@ -110,3 +110,4 @@ C:\Users\aleja\source\repos\server_movies\server_movies\bin\Debug\net8.0\System.
 C:\Users\aleja\source\repos\server_movies\server_movies\bin\Debug\net8.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
 C:\Users\aleja\source\repos\server_movies\server_movies\bin\Debug\net8.0\Microsoft.IdentityModel.Protocols.dll
 C:\Users\aleja\source\repos\server_movies\server_movies\bin\Debug\net8.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+C:\Users\aleja\source\repos\server_movies\server_movies\obj\Debug\net8.0\server_movies.sourcelink.json

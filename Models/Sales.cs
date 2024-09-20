@@ -14,5 +14,9 @@ namespace server_movies.Models
         public int total {  get; set; }
 
         public DateTime Date_Created { get; set; }
+
+        public string Poster_Path { get; set; }
+
+        public string title {  get; set; }
     }
 }
